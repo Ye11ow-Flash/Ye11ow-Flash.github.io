@@ -177,6 +177,41 @@
           background: linear-gradient(90deg, #0162c8, #00b4d9);
         } */
 
+        .proj_grouping_btn{
+          position: relative;
+          display: inline-block;
+          /* padding: 3px 12px; */
+          /* margin: 10px 0; */
+          /* color: #fff; */
+          text-decoration: none;
+          text-transform: uppercase;
+          /* font-size: 12px; */
+          /* letter-spacing: 2px; */
+          /* border-radius: 40px; */
+          /* background: linear-gradient(90deg, #0162c8, #55e7fc); */
+          
+        }
+        .proj_grouping_btn span{
+          position: absolute;
+          background: rgb(128, 125, 125);
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          border-radius: 50%;
+          animation: animatebtn 1s linear infinite;
+        }
+        @keyframes animatebtn {
+          0%{
+            width: 0px;
+            height: 0px;
+            opacity: 0.5;
+          }
+          100%{
+            width: 500px;
+            height: 500px;
+            opacity: 0;
+          }
+        }
+
     </style>
 
   </head>
@@ -702,6 +737,9 @@
               <a id="filter5" class="filter proj_grouping_btn btn btn-common" data-filter=".others">
                 Others
               </a>
+              <!-- <a id="filter6" class="filter proj_grouping_btn" data-filter=".others">
+                Test
+              </a> -->
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
@@ -1461,6 +1499,25 @@
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      const buttons = document.querySelectorAll('.proj_grouping_btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          let x = e.clientX - e.target.offsetLeft;
+          let y = e.clientY - e.target.offsetTop;
+
+          let ripples = document.createElement('span');
+          ripples.style.left = x + 'px';
+          ripples.style.top = y + 'px';
+
+          this.appendChild(ripples);
+
+          setTimeout(() => {
+            ripples.remove()
+          }, 1000);
+        })
+      })
+    </script>
       
   </body>
 </html>
