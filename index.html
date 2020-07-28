@@ -34,6 +34,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./style.css">
 
     <style>
        /* Set the size of the div element that contains the map */
@@ -495,11 +496,40 @@
 
     <!-- Services Section Start -->
     <section id="services" class="dark services section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Academics</h2>
-      <div class="container">
-        <div class="row">
+      <h2 class="section-title-academic wow flipInX" data-wow-delay="0.4s" style="margin-bottom: 0px !important;">Academics</h2>
+      <div class="container_parallex" id=app>
+        <!-- <div class="row"> -->
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <card>
+            <h1 slot="content" style=" margin-top: 20%; margin-bottom: 25%;"><i class="icon-notebook"></i></h1>
+            <h1 slot="content" style="font-size: 18px;"><a href="https://mahahsscboard.maharashtra.gov.in/">SSC Boards(10th Grade)</a></h1>
+            <p align="justify" slot="content">Scored <b><u>92.8%</u></b> in Maharashtra State board Examination. Stood among top <b><u>10</u></b> in school.</p>
+          </card>
+          <!-- Services item -->
+          <card>
+            <h1 slot="content" style="text-align: center; margin-top: 20%; margin-bottom: 25%;"><i class="icon-pie-chart"></i></h1>
+            <h1 slot="content" style="font-size: 18px;"><a href="https://mahahsscboard.maharashtra.gov.in/">HSC Boards(12th Grade)</a></h1>
+            <p align="justify" slot="content">Scored <b><u>81.85%</u></b> in Higher Secondary Boards. Also, scored <b><u>180/200</u></b> in Computer Science.</p>
+          </card>
+          <!-- Services item -->
+          <card>
+            <h1 slot="content" style="text-align: center; margin-top: 20%; margin-bottom: 25%;"><i class="icon-graduation"></i></h1>
+            <h1 slot="content" style="text-align: center; font-size: 18px;"><a href="https://kjsce.somaiya.edu/kjsce/?/kjsce/">Undergraduate</a></h1>
+            <p align="justify" slot="content">Have maintained an average pointer of <b><u>8.52/10</u></b>(till semester 7) in Computer Engineering.</p>
+          </card>
+          <!-- Services item -->
+          <card>
+            <h1 slot="content" style="text-align: center; margin-top: 20%; margin-bottom: 25%;"><i class="icon-lock-open"></i></h1>
+            <h1 slot="content" style="text-align: center; font-size: 18px;"><a href="https://www.ets.org/gre">GRE</a></h1>
+            <p align="justify" slot="content">Have scored a total of <b><u>322/340</u></b> in GRE with split of <b><u>169/170</u></b> in Quants and <b><u>153/170</u></b> in verbal.</p>
+          </card>
+      </div>
+
+
+      <!-- <div class="container">
+        <div class="row"> -->
+          <!-- Services item -->
+          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
               <div class="icon">
                 <i class="icon-notebook"></i>
@@ -507,12 +537,12 @@
               <div class="services-content">
                 <h3><a href="https://mahahsscboard.maharashtra.gov.in/">SSC Boards(10th Grade)</a></h3>
                 <p>Scored <b><u>92.8%</u></b> in Maharashtra State board Examination. Stood among top <b><u>10</u></b> in school.</p>
-              </div>
+              </div> -->
               <!-- <a href="#" class="btn btn-danger"><i class="icon-speech"></i></a> -->
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
               <div class="icon">
                 <i class="icon-pie-chart"></i>
@@ -522,9 +552,9 @@
                 <p>Scored <b><u>81.85%</u></b> in Higher Secondary Boards. Also, scored <b><u>180/200</u></b> in Computer Science.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
               <div class="icon">
                 <i class="icon-graduation"></i>
@@ -534,9 +564,9 @@
                 <p>Have maintained an average pointer of <b><u>8.53/10</u></b>(till semester 6) in Computer Engineering.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
+          <!-- <div class="col-md-6 col-lg-3 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
               <div class="icon">
                 <i class="icon-lock-open"></i>
@@ -546,9 +576,9 @@
                 <p>Have scored a total of <b><u>322/340</u></b> in GRE with split of <b><u>169/170</u></b> in Quants and <b><u>153/170</u></b> in verbal.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> -->
+        <!-- </div>
+      </div> -->
     </section>
     <!-- Services Section End -->
 
@@ -1499,6 +1529,8 @@
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+    <script src="parallex_script.js"></script>
     <script type="text/javascript">
       const buttons = document.querySelectorAll('.proj_grouping_btn');
       buttons.forEach(btn => {

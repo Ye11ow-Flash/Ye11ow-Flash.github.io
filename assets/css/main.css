@@ -109,6 +109,16 @@ ul li, ol li {
   position: relative;
 }
 
+.section-title-academic {
+  color: #252525;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 0 10px;
+  position: relative;
+}
+
 .btn {
   font-size: 14px;
   padding: 10px 30px;
