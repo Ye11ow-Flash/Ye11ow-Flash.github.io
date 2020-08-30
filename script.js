@@ -132,11 +132,11 @@ function setTheme(mode){
 	// 		var19[i].style.borderColor = bg_btn;
 	// 	}
 
-	// 	var text = "white";
-	// 	var var20 = document.getElementsByClassName('text');
-	// 	for(var i = 0; i < var20.length; i++){
-	// 		var20[i].style.color = text;
-	// 	}
+	var text = "black";
+	var var20 = document.getElementsByClassName('active');
+	for(var i = 0; i < var20.length; i++){
+		var20[i].style.color = text;
+	}
 	// }
 
 	if(mode == 'blue'){
