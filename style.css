@@ -73,6 +73,10 @@
   position: relative;
   z-index: 1;
 }
+
+.trial-class {
+  height: 50%;
+}
 .card-info:after {
   content: '';
   position: absolute;
